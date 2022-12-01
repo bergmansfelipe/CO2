@@ -1,0 +1,143 @@
+[debug] [2022-12-01T06:53:22.577Z] ----------------------------------------------------------------------
+[debug] [2022-12-01T06:53:22.578Z] Command:       /home/felipeb.sciensa/.config/nvm/versions/node/v16.16.0/bin/node /home/felipeb.sciensa/.config/nvm/versions/node/v16.16.0/bin/firebase emulators:start
+[debug] [2022-12-01T06:53:22.579Z] CLI Version:   11.16.1
+[debug] [2022-12-01T06:53:22.579Z] Platform:      linux
+[debug] [2022-12-01T06:53:22.579Z] Node Version:  v16.16.0
+[debug] [2022-12-01T06:53:22.579Z] Time:          Thu Dec 01 2022 03:53:22 GMT-0300 (Brasilia Standard Time)
+[debug] [2022-12-01T06:53:22.580Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-01T06:53:22.637Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-01T06:53:22.638Z] > authorizing via signed-in user (bergmansfelipe@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2022-12-01T06:53:22.645Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-12-01T06:53:22.645Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2022-12-01T06:53:22.649Z] [hub] writing locator at /tmp/hub-co2-economy.json
+[debug] [2022-12-01T06:53:22.663Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-12-01T06:53:22.663Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-12-01T06:53:22.663Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[info] ✔  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-12-01T06:53:22.679Z] defaultcredentials: writing to file /home/felipeb.sciensa/.config/firebase/bergmansfelipe_gmail_com_application_default_credentials.json
+[debug] [2022-12-01T06:53:22.696Z] Setting GAC to /home/felipeb.sciensa/.config/firebase/bergmansfelipe_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /home/felipeb.sciensa/.config/firebase/bergmansfelipe_gmail_com_application_default_credentials.json"}}
+[debug] [2022-12-01T06:53:22.699Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/co2-economy/adminSdkConfig [none]
+[debug] [2022-12-01T06:53:23.105Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/co2-economy/adminSdkConfig 200
+[debug] [2022-12-01T06:53:23.105Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/co2-economy/adminSdkConfig {"projectId":"co2-economy","storageBucket":"co2-economy.appspot.com"}
+[debug] [2022-12-01T06:53:23.119Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-12-01T06:53:23.119Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-12-01T06:53:23.119Z] Starting Emulator UI with command {"binary":"node","args":["/home/felipeb.sciensa/.cache/firebase/emulators/ui-v1.11.1/server/server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/home/felipeb.sciensa/.cache/firebase/emulators/ui-v1.11.1/server/server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-12-01T06:53:23.212Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2022-12-01T06:53:23.212Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "/home/felipeb.sciensa/Documents/co2-economy/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/home/felipeb.sciensa/Documents/co2-economy/functions\" for Cloud Functions..."}}
+[debug] [2022-12-01T06:53:23.384Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-12-01T06:53:24.322Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "lint:fix": "npm run lint -- --fix",
+    "test": "mocha -r ts-node/register './tests/**/*.spec.ts'",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "ajv": "^8.11.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.4",
+    "@types/mocha": "^10.0.1",
+    "@types/rosie": "0.0.40",
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "chai": "^4.3.7",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^0.2.3",
+    "mocha": "^10.1.0",
+    "rosie": "^2.1.0",
+    "ts-mockito": "^2.6.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.5.4"
+  },
+  "private": true
+}
+[debug] [2022-12-01T06:53:24.322Z] Building nodejs source
+[debug] [2022-12-01T06:53:24.322Z] Analyzing nodejs backend spec
+[debug] [2022-12-01T06:53:24.324Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-12-01T06:53:24.465Z] Serving at port 9005
+
+[debug] [2022-12-01T06:53:24.561Z] Got response from /__/functions.yaml {"endpoints":{"processEligibility":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"processEligibility"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-12-01T06:53:24.570Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: processEligibility. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: processEligibility."}}
+[info] ✔  functions[us-central1-processEligibility]: http function initialized (http://127.0.0.1:5001/co2-economy/us-central1/processEligibility). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/co2-economy/us-central1/processEligibility)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-12-01T06:53:31.081Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-01T06:53:31.081Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-01T06:53:31.082Z] Accepted request POST /co2-economy/us-central1/processEligibility --> us-central1-processEligibility
+[debug] [2022-12-01T06:53:31.082Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-01T06:53:31.083Z] [functions] Got req.url=/co2-economy/us-central1/processEligibility, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/co2-economy/us-central1/processEligibility, mapping to path=/"}}
+[debug] [2022-12-01T06:53:31.093Z] [worker-pool] addWorker(us-central1-processEligibility) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-processEligibility)"}}
+[debug] [2022-12-01T06:53:31.093Z] [worker-pool] Adding worker with key us-central1-processEligibility, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-processEligibility, total=1"}}
+[debug] [2022-12-01T06:53:31.797Z] [runtime-status] [97926] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/felipeb.sciensa/Documents/co2-economy/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-processEligibility"},"extension":{},"message":"[runtime-status] [97926] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/felipeb.sciensa/Documents/co2-economy/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-12-01T06:53:31.799Z] [runtime-status] [97926] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/felipeb.sciensa/Documents/co2-economy/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-processEligibility"},"extension":{},"message":"[runtime-status] [97926] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/felipeb.sciensa/Documents/co2-economy/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-01T06:53:31.799Z] [runtime-status] [97926] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-processEligibility"},"extension":{},"message":"[runtime-status] [97926] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-12-01T06:53:31.801Z] [runtime-status] [97926] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/felipeb.sciensa/Documents/co2-economy/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-processEligibility"},"extension":{},"message":"[runtime-status] [97926] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/felipeb.sciensa/Documents/co2-economy/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-01T06:53:31.831Z] [runtime-status] [97926] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-processEligibility"},"extension":{},"message":"[runtime-status] [97926] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-12-01T06:53:31.832Z] [runtime-status] [97926] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/felipeb.sciensa/Documents/co2-economy/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-processEligibility"},"extension":{},"message":"[runtime-status] [97926] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/felipeb.sciensa/Documents/co2-economy/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-12-01T06:53:31.833Z] [runtime-status] [97926] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/felipeb.sciensa/Documents/co2-economy/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-processEligibility"},"extension":{},"message":"[runtime-status] [97926] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/felipeb.sciensa/Documents/co2-economy/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-01T06:53:31.834Z] [runtime-status] [97926] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/felipeb.sciensa/Documents/co2-economy/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-processEligibility"},"extension":{},"message":"[runtime-status] [97926] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/felipeb.sciensa/Documents/co2-economy/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-12-01T06:53:31.834Z] [runtime-status] [97926] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/felipeb.sciensa/Documents/co2-economy/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-processEligibility"},"extension":{},"message":"[runtime-status] [97926] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/felipeb.sciensa/Documents/co2-economy/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-12-01T06:53:31.835Z] [runtime-status] [97926] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/felipeb.sciensa/Documents/co2-economy/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-processEligibility"},"extension":{},"message":"[runtime-status] [97926] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/felipeb.sciensa/Documents/co2-economy/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-12-01T06:53:31.879Z] [runtime-status] [97926] Functions runtime initialized. {"cwd":"/home/felipeb.sciensa/Documents/co2-economy/functions","node_version":"16.16.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-processEligibility"},"extension":{},"message":"[runtime-status] [97926] Functions runtime initialized. {\"cwd\":\"/home/felipeb.sciensa/Documents/co2-economy/functions\",\"node_version\":\"16.16.0\"}"}}
+[debug] [2022-12-01T06:53:31.880Z] [runtime-status] [97926] Listening to port: /tmp/fire_emu_311fe79fd88816a6.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-processEligibility"},"extension":{},"message":"[runtime-status] [97926] Listening to port: /tmp/fire_emu_311fe79fd88816a6.sock"}}
+[debug] [2022-12-01T06:53:31.906Z] [worker-us-central1-processEligibility-b06a42a2-681b-45d3-9731-0333512191d7]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-processEligibility-b06a42a2-681b-45d3-9731-0333512191d7]: IDLE"}}
+[debug] [2022-12-01T06:53:31.907Z] [worker-pool] submitRequest(triggerId=us-central1-processEligibility) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-processEligibility)"}}
+[debug] [2022-12-01T06:53:31.907Z] [worker-us-central1-processEligibility-b06a42a2-681b-45d3-9731-0333512191d7]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-processEligibility-b06a42a2-681b-45d3-9731-0333512191d7]: BUSY"}}
+[info] i  functions: Beginning execution of "processEligibility" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-processEligibility"},"extension":{},"message":"Beginning execution of \"processEligibility\""}}
+[warn] ⚠  functions: Error: strict mode: unknown keyword: "example"
+    at checkStrictMode (/home/felipeb.sciensa/Documents/co2-economy/functions/node_modules/ajv/dist/compile/util.js:174:15)
+    at checkUnknownRules (/home/felipeb.sciensa/Documents/co2-economy/functions/node_modules/ajv/dist/compile/util.js:32:13)
+    at alwaysValidSchema (/home/felipeb.sciensa/Documents/co2-economy/functions/node_modules/ajv/dist/compile/util.js:19:5)
+    at /home/felipeb.sciensa/Documents/co2-economy/functions/node_modules/ajv/dist/vocabularies/applicator/oneOf.js:32:50
+    at Array.forEach (<anonymous>)
+    at validateOneOf (/home/felipeb.sciensa/Documents/co2-economy/functions/node_modules/ajv/dist/vocabularies/applicator/oneOf.js:30:20)
+    at CodeGen.code (/home/felipeb.sciensa/Documents/co2-economy/functions/node_modules/ajv/dist/compile/codegen/index.js:439:13)
+    at CodeGen.block (/home/felipeb.sciensa/Documents/co2-economy/functions/node_modules/ajv/dist/compile/codegen/index.js:568:18)
+    at Object.code (/home/felipeb.sciensa/Documents/co2-economy/functions/node_modules/ajv/dist/vocabularies/applicator/oneOf.js:27:13)
+    at keywordCode (/home/felipeb.sciensa/Documents/co2-economy/functions/node_modules/ajv/dist/compile/validate/index.js:454:13) {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-processEligibility"},"extension":{},"message":"Error: strict mode: unknown keyword: \"example\"\n    at checkStrictMode (/home/felipeb.sciensa/Documents/co2-economy/functions/node_modules/ajv/dist/compile/util.js:174:15)\n    at checkUnknownRules (/home/felipeb.sciensa/Documents/co2-economy/functions/node_modules/ajv/dist/compile/util.js:32:13)\n    at alwaysValidSchema (/home/felipeb.sciensa/Documents/co2-economy/functions/node_modules/ajv/dist/compile/util.js:19:5)\n    at /home/felipeb.sciensa/Documents/co2-economy/functions/node_modules/ajv/dist/vocabularies/applicator/oneOf.js:32:50\n    at Array.forEach (<anonymous>)\n    at validateOneOf (/home/felipeb.sciensa/Documents/co2-economy/functions/node_modules/ajv/dist/vocabularies/applicator/oneOf.js:30:20)\n    at CodeGen.code (/home/felipeb.sciensa/Documents/co2-economy/functions/node_modules/ajv/dist/compile/codegen/index.js:439:13)\n    at CodeGen.block (/home/felipeb.sciensa/Documents/co2-economy/functions/node_modules/ajv/dist/compile/codegen/index.js:568:18)\n    at Object.code (/home/felipeb.sciensa/Documents/co2-economy/functions/node_modules/ajv/dist/vocabularies/applicator/oneOf.js:27:13)\n    at keywordCode (/home/felipeb.sciensa/Documents/co2-economy/functions/node_modules/ajv/dist/compile/validate/index.js:454:13)"}}
+[warn] ⚠  Your function was killed because it raised an unhandled error. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-processEligibility"},"extension":{},"message":"Your function was killed because it raised an unhandled error."}}
+[debug] [2022-12-01T06:53:31.977Z] [worker-us-central1-processEligibility-b06a42a2-681b-45d3-9731-0333512191d7]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-processEligibility-b06a42a2-681b-45d3-9731-0333512191d7]: IDLE"}}
+[debug] [2022-12-01T06:53:31.977Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-12-01T06:53:31.989Z] [worker-us-central1-processEligibility-b06a42a2-681b-45d3-9731-0333512191d7]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-processEligibility-b06a42a2-681b-45d3-9731-0333512191d7]: exited"}}
+[debug] [2022-12-01T06:53:31.990Z] [worker-us-central1-processEligibility-b06a42a2-681b-45d3-9731-0333512191d7]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-processEligibility-b06a42a2-681b-45d3-9731-0333512191d7]: FINISHED"}}
