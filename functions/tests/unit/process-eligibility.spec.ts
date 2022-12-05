@@ -1,8 +1,8 @@
 import {expect} from 'chai';
-import {Customer} from '../../src/domain/interfaces/customer.interface';
-import {Eligibility} from '../../src/domain/process-eligibility';
-import {CustomerFactory} from '../factory/customer.factory';
-import {EligibilityValidation} from '../../src/domain/interfaces/eligibility-validation.interface';
+import {Customer} from '../../../src/domain/interfaces/customer.interface';
+import {Eligibility} from '../../../src/domain/process-eligibility';
+import {CustomerFactory} from '../../factory/customer.factory';
+import {EligibilityValidation} from '../../../src/domain/interfaces/eligibility-validation.interface';
 import {mock, when, instance, resetCalls} from 'ts-mockito';
 
 describe('Eligibility', () => {

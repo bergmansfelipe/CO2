@@ -1,7 +1,7 @@
 import {expect} from 'chai';
-import {ConsumptionMinimalValidation} from '../../../src/domain/validations/consumption-minimal.validation';
-import {EligibilityValidationResult} from '../../../src/domain/interfaces/eligibility-validation.interface';
-import {CustomerFactory} from '../../factory/customer.factory';
+import {ConsumptionMinimalValidation} from '../../../../src/domain/validations/consumption-minimal.validation';
+import {EligibilityValidationResult} from '../../../../src/domain/interfaces/eligibility-validation.interface';
+import {CustomerFactory} from '../../../factory/customer.factory';
 
 describe('ConsumptionClassValidation', () => {
   const validation = new ConsumptionMinimalValidation();
@@ -11,7 +11,7 @@ describe('ConsumptionClassValidation', () => {
 
     context('when customer connection is "monofásica" and average consumption > 400', () => {
       const customer = CustomerFactory.build({
-        connectionType: 'monofasico',
+        tipoDeConexao: 'monofasico',
         consumptionHistory: [
           3878,
           9760,
@@ -47,7 +47,7 @@ describe('ConsumptionClassValidation', () => {
 
     context('when customer connection is "bifásica" and average consumption > 500', () => {
       const customer = CustomerFactory.build({
-        connectionType: 'bifasico',
+        tipoDeConexao: 'bifasico',
         consumptionHistory: [
           7538,
           4392,
@@ -85,7 +85,7 @@ describe('ConsumptionClassValidation', () => {
     
     context('when customer connection is "trifásica" and average consumption > 750', () => {
       const customer = CustomerFactory.build({
-        connectionType: 'trifasico',
+        tipoDeConexao: 'trifasico',
         consumptionHistory: [
           17538,
           14392,
@@ -123,7 +123,7 @@ describe('ConsumptionClassValidation', () => {
 
     context('when customer consumption history less than 12 months', () => {
       const customer = CustomerFactory.build({
-        connectionType: 'trifasico',
+        tipoDeConexao: 'trifasico',
         consumptionHistory: [
           538,
           392,

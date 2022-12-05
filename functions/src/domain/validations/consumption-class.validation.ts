@@ -14,7 +14,7 @@ export class ConsumptionClassValidation implements EligibilityValidation {
 
   public run(customer: Customer): EligibilityValidationResult {
     const eligible = this.eligibleConsumptionClasses.includes(
-        customer.consumptionClass
+        customer.modalidadeTarifaria
     );
 
     return {

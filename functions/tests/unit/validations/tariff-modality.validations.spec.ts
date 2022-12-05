@@ -1,7 +1,7 @@
 import {expect} from 'chai';
-import {TariffModalityValidation} from '../../../src/domain/validations/tariff-modality.validations';
-import {EligibilityValidationResult} from '../../../src/domain/interfaces/eligibility-validation.interface';
-import {CustomerFactory} from '../../factory/customer.factory';
+import {TariffModalityValidation} from '../../../../src/domain/validations/tariff-modality.validations';
+import {EligibilityValidationResult} from '../../../../src/domain/interfaces/eligibility-validation.interface';
+import {CustomerFactory} from '../../../factory/customer.factory';
 
 describe('ConsumptionClassValidation', () => {
   const validation = new TariffModalityValidation();
@@ -10,7 +10,7 @@ describe('ConsumptionClassValidation', () => {
     let result: EligibilityValidationResult;
 
     context('when client consumption class is eligible', () => {
-      const customer = CustomerFactory.build({ tariffModality: 'branca' });
+      const customer = CustomerFactory.build({ classeDeConsumo: 'branca' });
 
       before(() => {
         result = validation.run(customer);
@@ -30,7 +30,7 @@ describe('ConsumptionClassValidation', () => {
     });
 
     context('when client consumption class not eligible', () => {
-      const client = CustomerFactory.build({ tariffModality: 'azul' });
+      const client = CustomerFactory.build({ classeDeConsumo: 'azul' });
 
       before(() => {
         result = validation.run(client);

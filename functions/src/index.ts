@@ -12,8 +12,10 @@ import {
 } from './domain/validations/tariff-modality.validations';
 import {Customer} from './domain/interfaces/customer.interface';
 import {input} from './domain/schemas/input.schema';
+import {EligibilityResponseBuilder} from './output-eligibility.builder';
 
 const ajv = new Ajv();
+
 const eligibility = new Eligibility([
   new ConsumptionClassValidation(),
   new TariffModalityValidation(),
@@ -25,18 +27,17 @@ export const processEligibility = functions.https.onRequest(
     (request, response) => {
       const validate = ajv.compile<Customer>(input);
 
-      const customer = request.query.body;
-      functions.logger.info('productEligibility customer', {customer});
+      const customer = request.body;
+      functions.logger.info('productEligibility customer', {...customer});
 
       if (validate(customer)) {
+        functions.logger.info(
+            'productEligibility - init eligibility.process',
+            {...customer}
+        );
         const output = eligibility.process(customer);
-        functions.logger.info('productEligibility', {structuredData: true});
         functions.logger.info('productEligibility output', {...output});
-        response.send({
-          elegivel: output.eligible,
-          razoesInelegibilidade: output.notEligibleReasons,
-          economiaAnualDeCO2: output.notEligibleReasons,
-        });
+        response.send(new EligibilityResponseBuilder(output).build());
       } else {
         response.status(400).send(validate.errors);
       }

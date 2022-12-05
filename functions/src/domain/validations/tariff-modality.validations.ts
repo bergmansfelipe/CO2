@@ -13,7 +13,7 @@ export class TariffModalityValidation implements EligibilityValidation {
 
   public run(customer: Customer): EligibilityValidationResult {
     const eligible = this.eligibleTariffModality.includes(
-        customer.tariffModality
+        customer.classeDeConsumo
     );
 
     return {

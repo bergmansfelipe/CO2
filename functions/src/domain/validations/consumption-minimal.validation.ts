@@ -11,13 +11,13 @@ export class ConsumptionMinimalValidation implements EligibilityValidation {
     let eligible = false;
     let co2Economy = 0;
 
-    if (customer.consumptionHistory.length >= 12) {
+    if (customer.historicoDeConsumo.length >= 12) {
       const averageConsumption = this.getAverageConsumptionOfLast12Months(
-          customer.consumptionHistory
+          customer.historicoDeConsumo
       );
 
       eligible = this.validateConsumptionByConnectionType(
-          customer.connectionType,
+          customer.tipoDeConexao,
           averageConsumption,
       );
 

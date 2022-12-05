@@ -1,7 +1,7 @@
 export interface Customer {
-  registrationNumber: string;
-  connectionType: string;
-  tariffModality: string;
-  consumptionClass: string;
-  consumptionHistory: number[];
+  numeroDoDocumento: string;
+  tipoDeConexao: string;
+  classeDeConsumo: string;
+  modalidadeTarifaria: string;
+  historicoDeConsumo: number[];
 }

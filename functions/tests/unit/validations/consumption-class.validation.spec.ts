@@ -1,7 +1,7 @@
 import {expect} from 'chai';
-import {ConsumptionClassValidation} from '../../../src/domain/validations/consumption-class.validation';
-import {EligibilityValidationResult} from '../../../src/domain/interfaces/eligibility-validation.interface';
-import {CustomerFactory} from '../../factory/customer.factory';
+import {ConsumptionClassValidation} from '../../../../src/domain/validations/consumption-class.validation';
+import {EligibilityValidationResult} from '../../../../src/domain/interfaces/eligibility-validation.interface';
+import {CustomerFactory} from '../../../factory/customer.factory';
 
 describe('ConsumptionClassValidation', () => {
   const validation = new ConsumptionClassValidation();
@@ -10,7 +10,7 @@ describe('ConsumptionClassValidation', () => {
     let result: EligibilityValidationResult;
 
     context('when customer consumption class is eligible', () => {
-      const customer = CustomerFactory.build({ consumptionClass: 'industrial' });    
+      const customer = CustomerFactory.build({ modalidadeTarifaria: 'industrial' });    
 
       before(() => {
         result = validation.run(customer);
@@ -30,7 +30,7 @@ describe('ConsumptionClassValidation', () => {
     });
 
     context('when customer consumption class not eligible', () => {
-      const customer = CustomerFactory.build({ consumptionClass: 'rural' });
+      const customer = CustomerFactory.build({ modalidadeTarifaria: 'rural' });
 
       before(() => {
         result = validation.run(customer);
